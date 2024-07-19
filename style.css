@@ -160,7 +160,7 @@ h1 {
 
 .grid {
   display: grid;
-  grid: repeat(4, 50px) / repeat(2, 1fr);
+  grid: repeat(2, 50px) / repeat(4, 1fr);
   gap: 7px;
   a {
     height: 50px;
@@ -513,6 +513,7 @@ h1 {
     left: 460px;
     background-color: #1d1c1c;
   }
+  
 
   header {
     top: 20px;
@@ -598,11 +599,13 @@ h1 {
 
   .album-collection {
     min-height: 290px;
+    justify-content: flex-start;
   }
 
   .small-album-collection {
     height: 227px;
     padding-left: 5px;
+    justify-content: flex-start;
   }
 
   .horizontal-scroll {
@@ -662,6 +665,10 @@ h1 {
 
   main {
     margin-top: 100px;
+  }
+
+  .grid {
+    grid: repeat(4, 50px) / repeat(2, 1fr);
   }
   aside {
     top: 20px;
@@ -748,6 +755,9 @@ h1 {
   }
   .small-album-collection {
     min-height: 175px;
+  }
+  .grid {
+    grid: repeat(4, 50px) / repeat(2, 1fr);
   }
 }
 
