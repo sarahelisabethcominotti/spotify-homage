@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- mobile header -->
+        <div class="container mobile-header horizontal-scroll">
+            <div>
+                <img class="round-icon" src="/images/profilepic.jpeg">
+            </div>
+            <div class="header-button selected-button">
+                <a href="##">All</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Music</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Podcasts</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Audiobooks</a>
+            </div>
+        </div>
+        <!-- desktop header -->
+        <div class="container desktop-header first-row">
+            <div class="container">
+                    <div class="round-icon">
+                        <a href="##">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="round-icon">
+                        <a href="/liked_songs.html">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </a>
+                    </div>
+            </div>
+            <div class="container">
+                <div class="header-button selected-button right">
+                    <a href="##"><p>Explore Premium</p></a>
+                </div>
+                <div class="header-button right">
+                    <a href="##">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none" viewBox="2 -7 24 27">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+                        </svg>Install App
+                    </a>
+                </div>
+                <div class="round-icon">
+                    <a href="##">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img class="round-icon" src="/images/profilepic.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="container desktop-header second-row">
+            <div class="header-button selected-button">
+                <a href="##">All</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Music</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Podcasts</a>
+            </div>
+            <div class="header-button">
+                <a href="##">Audiobooks</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="horizontal-scroll">
+        <!-- folder grid -->
+        <div class="folder grid">
+            <a href="/liked_songs.html">
+                <div class="folder-item liked">
+                    <img src="/images/liked-songs-image.jpg">
+                    <text fill="white">Liked Songs</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item old">
+                    <img src="/images/old-playlist.png">
+                    <text fill="white">Old</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item burn">
+                    <img src="/images/let-it-burn-radio-playlist.png">
+                    <text fill="white">Let It Burn Radio</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item release">
+                    <img src="/images/release-radar.png">
+                    <text fill="white">Release Radar</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item mix1">
+                    <img src="/images/daily-mix-1.png">
+                    <text fill="white">Daily Mix 1</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item mix2">
+                    <img src="/images/daily-mix-2.png">
+                    <text fill="white">Daily Mix 2</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item mix3">
+                    <img src="/images/daily-mix-3.png">
+                    <text fill="white">Daily Mix 3</text>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="folder-item mix4">
+                    <img src="/images/daily-mix-4.png">
+                    <text fill="white">Daily Mix 4</text>
+                </div>
+            </a> 
+        </div>
+
+        <!-- made for Sarah -->
+        <div>
+            <h1>
+                Made For Sarah Cominotti
+            </h1>
+        </div>
+        <div class="album-collection container horizontal-scroll ">
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-1.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-2.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-3.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-4.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-5.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/daily-mix-6.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/discover-weekly-playlist.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/release-radar.png">
+                    <p>Chase Matthew, Warren Zeiders</p>
+                </div>
+            </a> 
+        </div>
+
+        <!-- recently played -->
+        <div>
+            <h1>
+                Recently Played
+            </h1>
+        </div>
+        <div class="small-album-collection container horizontal-scroll ">
+            <a href="#">
+                <div class="small album">
+                    <img src="/images/music-playing-image.png">
+                    <p>This Town's Been Too...</p>
+                </div>
+            </a>  
+            <a href="#">
+                <div class="small album">
+                    <img src="/images/liked-songs-image.jpg">
+                    <p>Liked Songs</p>
+                </div>
+            </a>  
+            <a href="#">
+                <div class="small album">
+                    <img src="/images/laura-pausini-playlist.png">
+                    <p>Laura Pausini</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="small album">
+                    <img src="/images/antidote-playlist.png">
+                    <p>In Search Of The Antidote</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="small album">
+                    <img src="/images/spanish-playlist.png">
+                    <p>Spanish</p>
+                </div>
+            </a> 
+        </div>
+
+
+        <!-- release radar -->
+        <div>
+            <h1>
+                Release Radar
+            </h1>
+        </div>
+        <div class="album-collection container horizontal-scroll ">
+            <a href="#">
+                <div class="album">
+                    <img src="/images/hot-country-playlist.png">
+                    <p>Today's top country hits.</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/turned-into-missing-you-radio.png">
+                    <p>With Max McNown, Eddie</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/make-it-look-easy-radio.png">
+                    <p>With Avery Anna, Ashley</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/fast-car.png">
+                    <p>Luke Combs</p>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="album">
+                    <img src="/images/if-i-hated-you.png">
+                    <p>FLETCHER</p>
+                </div>
+            </a>
+        </div>
+
+    </main>
+    
+    <aside>
+    <!-- desktop left menu -->
+        <div class="desktop-aside-wide">
+            <div class="home-search vertical-container">
+                <a href="##">
+                    <div class="folder-item">
+                        <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 10 50 40" fill="#ffffff"><path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"/></svg>
+                        <text>Home</text>
+                    </div>
+                </a>
+                <a href="##">
+                    <div class="folder-item">
+                        <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 8 50 40" fill="#ffffff"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                        <text>Search</text>
+                    </div>
+                </a> 
+            </div>
+            <div class="library vertical-container">
+                <div class="first-row container">
+                    <div class="container">
+                    <div class="folder-item">
+                        
+                        <a href="##">
+                            <div class="folder-item">
+                                <svg class="mobile-footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none" viewBox="2 0 20 27">                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"/>
+                                </svg>
+                                <text>Your Library</text>
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="aside-button round-icon">
+                        <a href="##">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 12h14m-7 7V5"/>
+                            </svg>
+                        </a>
+                    </div> 
+                    <div class="aside-button round-icon">
+                        <a href="##">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="second-row container horizontal-scroll">
+                    <div class="header-button">
+                        <a href="##">Playlists</a>
+                    </div>
+                    <div class="header-button">
+                        <a href="##">Artists</a>
+                    </div>
+                    <div class="header-button">
+                        <a href="##">Albums</a>
+                    </div>
+                    <div class="header-button podcast">
+                        <a href="##">Podcasts</a>
+                    </div>
+                </div>
+                
+                <div class="third-row container">
+                    <div class="header-button round-icon">
+                        <a href="##">
+                            <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 40" fill="#ffffff"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                        </a>
+                    </div>
+                    <div class="header-button">
+                        <a href="##">
+                            Recents<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none" viewBox="2 -7 24 27">                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+                            </svg>                           
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="folder album-list horizontal-scroll vertical-container">
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/liked-songs-image.jpg">
+                            <div class="vertical-container">
+                                <text fill="white">Liked Songs</text>
+                                <text class="descriptive">Playlist &#183 59 Songs</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/old-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">Old</text>
+                                <text class="descriptive">Playlist &#183 Sarah Cominotti</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/antidote-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">In Search Of The Antidote</text>
+                                <text class="descriptive">Album &#183 FLETCHER</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/spanish-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">Spanish</text>
+                                <text class="descriptive">Playlist &#183 Sarah Cominotti</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/laura-pausini-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">Laura Pausini</text>
+                                <text class="descriptive">Playlist &#183 Sarah Cominotti</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/austin-radio-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">Austin Radio</text>
+                                <text class="descriptive">Playlist &#183 Spotify</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/let-it-burn-radio-playlist.png">
+                            <div class="vertical-container">
+                                <text fill="white">Let It Burn Radio</text>
+                                <text class="descriptive">Playlist &#183 Spotify</text>
+                            </div>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/daily-mix-4.png">
+                            <div class="vertical-container">
+                                <text fill="white">Daily Mix 4</text>
+                                <text class="descriptive">Playlist &#183 Spotify</text>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-aside-slim">
+            <div class="home-search vertical-container">
+                <a href="/index.html">
+                    <div class="folder-item">
+                        <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 10 50 40" fill="#ffffff"><path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"/></svg>
+                    </div>
+                </a>
+                <a href="##">
+                    <div class="folder-item">
+                        <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 8 50 40" fill="#ffffff"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                    </div>
+                </a> 
+            </div>
+                <div class="folder album-list vertical-container">
+                    <a href="##">
+                        <div class="folder-item">
+                            <svg class="mobile-footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none" viewBox="2 0 20 27">                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"/>
+                            </svg>
+                        </div>    
+                    </a>
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/liked-songs-image.jpg">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/old-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/antidote-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/spanish-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/laura-pausini-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/austin-radio-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/let-it-burn-radio-playlist.png">
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="aside-item">
+                            <img src="/images/daily-mix-4.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- mobile music player -->
+        <div>
+        <a class="trigger" href="##">
+        <div class="floating-music vertical-container">
+            
+            <div class="music-playing container">
+                <div>
+                    <img class="music-icon" src="/images/music-playing-image.png">
+                </div>
+                <div>
+                    <p class="song-title">This Town's Been Too Good To Us</p>
+                    <p class="artist-name">Dylan Scott</p>
+                </div>
+                <div class="device-icon">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1M9 12H4m8 8V9h8v11h-8Zm0 0H9m8-4a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/>
+                    </svg>                         
+                </div>
+                <!-- <div class="play-button">
+                        <svg fill="#000000" height="35" width="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <path d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"/>
+                        </svg>  
+                    </div> -->
+                <div class="pause-button">
+                    <svg fill="#00000" height="35" width="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                    <path d="M8 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H8Zm7 0a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1Z"/>
+                    </svg>        
+                </div>
+            </div>
+            <div class="time-bar">
+                <svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="#888f8f" stroke-width="1"/>
+                    <line class="white-line" x1="0" y1="0" x2="100" y2="0" stroke="#ffffff" stroke-width="1" />
+                </svg>
+            </div>
+                   
+        </div>
+        </a>  
+    <!-- mobile music popup -->
+        <div class="music-popup vertical-container">
+            <!-- header -->
+            <div class="first-row container">
+                <div class="round-icon">
+                    <a href="##">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m19 9-7 7-7-7" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <p>Playing Song</p>
+                </div>
+                <div class="round-icon">
+                    <a href="##">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 12h.01m6 0h.01m5.99 0h.01"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- song details (image + title/artist + add) -->
+            <div class="song-info">
+            <div class="image">
+                <img class="music-icon" src="/images/music-playing-image.png">
+            </div>
+            <div class="container">
+                <div class="song-title-artist">
+                    <p class="song-title">This Town's Been Too Good To Us</p>                            <p class="artist-name">Dylan Scott</p>
+                </div> 
+                <div class="pause-button">
+                    <svg fill="#20d760" height="20" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z"/>
+                    </svg>        
+                </div> 
+            </div>
+            </div>
+            <!-- play bar -->
+            <div class="play-bar vertical-container">
+                <div><svg viewBox="0 0 100 2" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="#888f8f" stroke-width="2"/>    
+                    <line class="white-line" x1="0" y1="0" x2="100" y2="0" stroke="#ffffff" stroke-width="2" />                        </svg>
+                </div>
+                <div class="container">
+                    <div><p class="time-count">0:00</p></div>
+                    <div><p>3:14</p></div>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="popup-player container">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.484 9.166 15 7h5m0 0-3-3m3 3-3 3M4 17h4l1.577-2.253M4 7h4l7 10h5m0 0-3 3m3-3-3-3"/>
+                    </svg>        
+                </div>
+                <div>
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"/>
+                    </svg>        
+                </div> 
+                <div class="play-button">
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9-3a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Zm4 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Z"/>
+                    </svg>        
+                </div> 
+                <div>
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path fill-rule="#ffffff" d="M17 6a1 1 0 1 0-2 0v4L8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8L15 14v4a1 1 0 1 0 2 0V6Z"/>
+                    </svg>        
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3"/>
+                    </svg>        
+                </div> 
+            </div>    
+             <!--lyrics  -->
+             <div class="lyrics-container">
+                <h1>Lyrics</h1>
+             <div class="lyrics">
+                <p>Gave us that hilltop place to park</p>
+                <p>Gave us them girls that stole our hearts</p>
+                <p>Gave us them bucks up on the wall</p>
+                <p>The way we live, and the way we talk</p>
+                <p>Gave us state that senior year</p>
+                <p>Them country stores to buy that beer</p>
+                <p>A place to go nobody knows</p>
+                <p>When you take it in and you take it</p>
+                <p>Slow like that river rolls</p>
+                <p>Where that green grass grows</p>
+                <p>I can't explain</p>
+                <p>Ah, it's something ain't it</p>
+                <p>Yeah, we sure painted it up</p>
+                <p>Tore down them old two lane roads</p>
+                <p>We either stole every sign or left 'em in bullet holes</p>
+                <p>It wasn't nowhere as bad as we all said that it was</p>
+                <p>Yeah, looking back at it now this town's been too good to us</p>
+                <p>Raised hell on the weekends, yeah</p>
+                <p>Man, what were we thinking when we said we'd leave it in a cloud of dust</p>
+                <p>This town's been too good to us</p>
+                <p>Good people in a back row pew</p>
+                <p>Good dirt that the corn grows through</p>
+                <p>Good water that can wash away our sins</p>
+                <p>Good times with some damn good friends</p>
+                <p>Whole lot of not too much to do</p>
+                <p>All the time in the world to do it</p>
+                <p>Every bit of that down home dirt was heaven on earth</p>
+                <p>And we never knew it</p>
+                <p>Yeah, we sure painted it up</p>
+                <p>Tore down them old two lane roads</p>
+                <p>We either stole every sign or left 'em in bullet holes</p>
+                <p>It wasn't nowhere as bad as we all said that it was</p>
+                <p>Yeah, looking back at it now this town's been too good to us</p>
+                <p>Raised hell on the weekends, yeah</p>
+                <p>Man, what were we thinking when we said we'd leave it in a cloud of dust</p>
+                <p>This town's been too good to us</p>
+                <p>Too good to us</p>
+                <p>Slow like that river rolls</p>
+                <p>Where that green grass grows</p>
+                <p>I can't explain</p>
+                <p>Ah, it's something ain't it</p>
+                <p>Yeah, we sure painted it up</p>
+                <p>Tore down them old two lane roads</p>
+                <p>We either stole every sign or left 'em in bullet holes</p>
+                <p>It wasn't nowhere as bad as we all said that it was</p>
+                <p>Yeah, looking back at it now this town's been too good to us</p>
+                <p>Raised hell on the weekends, yeah</p>
+                <p>Man, what were we thinking when we said we'd leave it in a cloud of dust</p>
+                <p>This town's been too good to us</p>
+                <p>Yeah, too good to us</p>
+                <p>This town's been too good to us</p>
+            </div>
+            </div>
+       </div>
+        </div>
+    </aside>
+    
+    <footer>
+    <!-- mobile footer -->
+        <div class="container mobile-footer">
+            <div class="home-button selected-icon">
+                <a href="xx">
+                    <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 40" fill="#ffffff"><path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"/></svg>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 40" width="35" height="35" fill="#ffffff"><path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"/></svg> -->
+                    <p>Home</p>
+                </a>
+            </div>
+
+            <div class="search-button">
+                <a href="xx">
+                    <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 40" fill="#ffffff"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                    <p>Search</p>
+                </a>
+            </div>
+            
+            <div class="library-button">
+                <a href="xx">
+                    <svg class="mobile-footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.005 11.19V12l6.998 4.042L19 12v-.81M5 16.15v.81L11.997 21l6.998-4.042v-.81M12.003 3 5.005 7.042l6.998 4.042L19 7.042 12.003 3Z"/>
+                      </svg>
+                    <p>Library</p>
+                </a>    
+            </div>
+
+            <div class="premium-button">
+                <a href="xx">
+                    <svg class="mobile-footer-icon" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 305 305" xml:space="preserve">
+	                    <path d="M152.441,0C68.385,0,0,68.39,0,152.453C0,236.568,68.385,305,152.441,305	C236.562,305,305,236.568,305,152.453C305,68.39,236.562,0,152.441,0z M75.08,208.47c17.674-5.38,35.795-8.108,53.857-8.108	c30.676,0,60.96,7.774,87.592,22.49c1.584,0.863,3.024,3.717,3.67,7.27c0.646,3.552,0.389,7.205-0.648,9.105 c-1.309,2.438-3.965,4.014-6.768,4.014c-1.389,0-2.61-0.312-3.831-0.972c-24.448-13.438-52.116-20.542-80.015-20.542 c-16.855,0-33.402,2.495-49.167,7.409c-0.768,0.233-1.558,0.352-2.348,0.352c-3.452,0.001-6.448-2.198-7.453-5.461	C68.612,219.566,71.419,209.667,75.08,208.47z M68.43,152.303c19.699-5.355,40.057-8.071,60.508-8.071 c36.765,0,73.273,8.896,105.601,25.739c2.266,1.15,3.936,3.1,4.701,5.49c0.776,2.421,0.542,5.024-0.669,7.347 c-2.885,5.646-6.257,9.44-8.393,9.44c-1.514,0-2.975-0.363-4.43-1.09c-30.019-15.632-62.59-23.558-96.811-23.558 c-19.035,0-37.71,2.503-55.489,7.435c-0.827,0.224-1.676,0.337-2.521,0.337c-4.277,0.001-8.046-2.888-9.162-7.013 C60.336,162.994,63.601,153.616,68.43,152.303z M66.727,115.606c-0.903,0.223-1.826,0.335-2.744,0.335 c-5.169,0.001-9.648-3.492-10.892-8.487c-1.559-6.323,2.397-13.668,8.126-15.111c22.281-5.473,45.065-8.248,67.72-8.248	c43.856,0,85.857,9.86,124.851,29.312c2.708,1.336,4.727,3.642,5.687,6.493c0.96,2.854,0.748,5.926-0.592,8.64 c-1.826,3.655-5.772,7.59-10.121,7.59c-1.677,0-3.399-0.393-4.924-1.109c-35.819-17.921-74.477-27.008-114.9-27.008	C108.164,108.014,87.234,110.568,66.727,115.606z"/>
+                    </svg>
+                    <p>Premium</p>
+                </a>    
+            </div>
+
+            
+        </div>
+        
+    <!-- desktop footer -->
+        <div class="container desktop-footer">
+            <div class="song-info container">
+                <div>
+                    <img class="music-icon" src="/images/music-playing-image.png">
+                </div>
+                <div class="song-title-artist">
+                    <p class="song-title">This Town's Been Too Good To Us</p>
+                    <p class="artist-name">Dylan Scott</p>
+                </div> 
+                <div class="pause-button">
+                    <svg fill="#20d760" height="20" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z"/>
+                    </svg>        
+                </div> 
+            </div>
+
+            <div class="play-bar">
+                <div class="player-icons container">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke="#20d760" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.484 9.166 15 7h5m0 0-3-3m3 3-3 3M4 17h4l1.577-2.253M4 7h4l7 10h5m0 0-3 3m3-3-3-3"/>
+                        </svg>        
+                    </div>
+                    <div>
+                        <svg fill="#888f8f" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <path d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"/>
+                        </svg>        
+                    </div> 
+                    <div class="play-button">
+                        <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9-3a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Zm4 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Z"/>
+                        </svg>        
+                    </div> 
+                    <div>
+                        <svg fill="#888f8f" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <path fill-rule="#888f8f" d="M17 6a1 1 0 1 0-2 0v4L8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8L15 14v4a1 1 0 1 0 2 0V6Z"/>
+                        </svg>        
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <path stroke="#888f8f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3"/>
+                        </svg>        
+                    </div> 
+                </div>
+                <div class="time-bar container">
+                    <p class="time-count">0:00</p>
+                    <svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="100" y2="0" stroke="#888f8f" stroke-width="1"/>
+                        <line class="white-line" x1="0" y1="0" x2="100" y2="0" stroke="#ffffff" stroke-width="1" />
+                    </svg>
+                   
+                    <p>3:14</p>
+
+                </div>
+
+            </div>
+            
+            <div class="music-settings container">
+                <div class="device-icon">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#888f8f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>
+                    </svg>                         
+                </div>
+                  
+                <div>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#888f8f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1M9 12H4m8 8V9h8v11h-8Zm0 0H9m8-4a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/>
+                    </svg> 
+                </div>
+                <div>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#888f8f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.43A4.985 4.985 0 0 1 19 12a4.984 4.984 0 0 1-1.43 3.5M14 6.135v11.73a1 1 0 0 1-1.64.768L8 15H6a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
+                    </svg> 
+                </div>
+                <div class="volume-bar">
+                    <svg viewBox="0 0 200 10" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="200" y2="0" stroke-width="15" stroke="#888f8f" />
+                        <line x1="0" y1="0" x2="50" y2="0" stroke-width="15" stroke="#ffffff" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                        <path stroke="#888f8f" d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"/>
+                    </svg>        
+                </div>  
+
+             
+
+        
+                  
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- make CSS better -->
+<!-- change description to made for -->
+
+
+
+<!-- add moving lyrics to the mobile popip -->
+<!-- make desktop albums bigger and only 3 in row -->
+<!-- asjsut desktop background -->
+<!-- adjust desktop header -->
+<!-- create main HP with made for - your playlist - recently played-->
+<!-- create black theme -->
+<!-- make header sticky -->
+<!-- create header arrovs - types - account-->
+<!-- create mobile firs -->
+<!-- create footer  (desktop) and little box (mobile) (musinc plauing - adjust volume - animate progress bar with repeat song) -->
+<!-- create music pop up onlt for mobile -->
+<!-- create side block <aside> desktop-->
+<!-- update images -->
+<!-- create header desktop -->
+
+
+<!-- ULTIMATELY -->
+<!-- finish desktop main -->
+<!-- create mobile music player pop up -->
+<!-- create mobile liked songs -->
+<!-- create desktop liked songs -->
