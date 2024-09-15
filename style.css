@@ -89,7 +89,7 @@ h1 {
 
 .folder-item,
 .aside-item {
-  background-color: #1d1c1c;
+  /* background-color: #1d1c1c; */
   border: none;
   border-radius: 5px;
   display: flex;
@@ -107,6 +107,24 @@ h1 {
   .text {
     padding: 7px;
   }
+}
+ 
+.play-logo {
+  display: none
+} 
+
+.aside-album:hover{
+  background-color: #5e5d5d;
+  .play-logo {
+    display: block;
+    /* margin-right: auto; */
+  }
+}
+
+.aside-album {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .aside-item {
@@ -477,7 +495,7 @@ h1 {
     overflow-y: scroll;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    .folder-item {
+    .aside-album {
       background-color: #302a2a;
     }
   }
